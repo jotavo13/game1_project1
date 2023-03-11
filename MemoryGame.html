@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./Game1.css"></link>
+    <script defer src="./script.js"></script>
+
+
+
+    <title>Memory Game</title>
+</head>
+<body>
+
+
+<div class="container" >
+    <button onclick = 'hide()' id="start">Start</button>
+    <div id = 'myHide'>
+        <p>This is how you play the game</p>
+    </div>
+<!-- //https://www.w3schools.com/howto/howto_css_flip_card.asp -->
+<section class="playGround">
+    <div class="room-SquarePic">
+        <div class="SquarePic" width="150" height="203.33" data-Pic = 'PIC1'>
+            <img class= 'SquarePic_face front-face' src="./IMAGES/backGround.jpg" alt="picBack" width="150" height="203.33">
+            <img class= 'SquarePic_face back-face' src="./IMAGES/PIC1.jpg" alt="pic1" width="150" height="203.33">
+        </div>
+    </div>
+    <div class="room-SquarePic">
+        <div class="SquarePic" width="150" height="203.33" data-Pic = 'PIC1'>
+            <img class= 'SquarePic_face front-face' src="./IMAGES/backGround.jpg" alt="picBack" width="150" height="203.33">
+            <img class= 'SquarePic_face back-face' src="./IMAGES/PIC1.jpg" alt="pic1" width="150" height="203.33">
+        </div>
+    </div>
+    <div class="room-SquarePic">
+        <div class="SquarePic" width="150" height="203.33" data-Pic = 'PIC2'>
+            <img class= 'SquarePic_face front-face' src="./IMAGES/backGround.jpg" alt="picBack" width="150" height="203.33">
+            <img class= 'SquarePic_face back-face' src="./IMAGES/PIC2.jpg" alt="pic2" width="150" height="203.33">
+       </div>
+	</div>
+    <div class="room-SquarePic">
+        <div class="SquarePic" width="150" height="203.33" data-Pic = 'PIC2'>
+            <img class= 'SquarePic_face front-face' src="./IMAGES/backGround.jpg" alt="picBack" width="150" height="203.33">
+            <img class= 'SquarePic_face back-face' src="./IMAGES/PIC2.jpg" alt="pic2" width="150" height="203.33">
+    	</div>
+    </div>
+    <div class="room-SquarePic">
+        <div class="SquarePic" width="150" height="203.33" data-Pic = 'PIC3'>
+            <img class= 'SquarePic_face front-face' src="./IMAGES/backGround.jpg" alt="picback" width="150" height="203.33">
+            <img class= 'SquarePic_face back-face' src="./IMAGES/PIC3.jpg" alt="pic3" width="150" height="203.33">
+   		</div>
+	</div>
+    <div class="room-SquarePic">
+        <div class="SquarePic" width="150" height="203.33" data-Pic = 'PIC3'>
+            <img class= 'SquarePic_face front-face' src="./IMAGES/backGround.jpg" alt="picBack" width="150" height="203.33">
+            <img class= 'SquarePic_face back-face' src="./IMAGES/PIC3.jpg" alt="pic3" width="150" height="203.33">
+   		</div>
+	</div>
+    <div class="room-SquarePic">
+        <div class="SquarePic" width="150" height="203.33" data-Pic = 'PIC4'>
+            <img class= 'SquarePic_face front-face' src="./IMAGES/backGround.jpg" alt="picBack" width="150" height="203.33">
+            <img class= 'SquarePic_face back-face' src="./IMAGES/PIC4.jpg" alt="pic4" width="150" height="203.33">
+    	</div>
+	</div>
+    <div class="room-SquarePic">
+        <div class="SquarePic" width="150" height="203.33" data-Pic = 'PIC4'>
+            <img class= 'SquarePic_face front-face' src="./IMAGES/backGround.jpg" alt="picBack" width="150" height="203.33">
+            <img class= 'SquarePic_face back-face' src="./IMAGES/PIC4.jpg" alt="pic4" width="150" height="203.33">
+    	</div>
+	</div>
+    <div class="room-SquarePic">
+        <div class="SquarePic" width="150" height="203.33" data-Pic = 'PIC5'>
+            <img class= 'SquarePic_face front-face' src="./IMAGES/backGround.jpg" alt="picBack" width="150" height="203.33">
+            <img class= 'SquarePic_face back-face' src="./IMAGES/PIC5.jpg" alt="pic5" width="150" height="203.33">
+    	</div>
+	</div>
+    <div class="room-SquarePic">
+        <div class="SquarePic" width="150" height="203.33" data-Pic = 'PIC5'>
+            <img class= 'SquarePic_face front-face' src="./IMAGES/backGround.jpg" alt="picBack" width="150" height="203.33">
+            <img class= 'SquarePic_face back-face' src="./IMAGES/PIC5.jpg" alt="pic5" width="150" height="203.33">
+    	</div>
+	</div>
+    <div class="room-SquarePic">
+        <div class="SquarePic" width="150" height="203.33" data-Pic = 'PIC6'>
+            <img class= 'SquarePic_face front-face' src="./IMAGES/backGround.jpg" alt="picBack" width="150" height="203.33">
+            <img class= 'SquarePic_face back-face' src="./IMAGES/PIC6.jpg" alt="pic6" width="150" height="203.33">
+    	</div>
+	</div>
+    <div class="room-SquarePic">
+        <div class="SquarePic" width="150" height="203.33" data-Pic = 'PIC6'>
+            <img class= 'SquarePic_face front-face' src="./IMAGES/backGround.jpg" alt="picBack" width="150" height="203.33">
+            <img class= 'SquarePic_face back-face' src="./IMAGES/PIC6.jpg" alt="pic6" width="150" height="203.33">
+    	</div>
+	</div>
+    <div class="room-SquarePic">
+        <div class="SquarePic" width="150" height="203.33" data-Pic = 'PIC7'>
+            <img class= 'SquarePic_face front-face' src="./IMAGES/backGround.jpg" alt="picBack" width="150" height="203.33">
+            <img class= 'SquarePic_face back-face' src="./IMAGES/PIC7.jpg" alt="pic7" width="150" height="203.33">
+   	 	</div>
+	</div>
+    <div class="room-SquarePic">
+        <div class="SquarePic" width="150" height="203.33" data-Pic = 'PIC7'>
+            <img class= 'SquarePic_face front-face' src="./IMAGES/backGround.jpg" alt="picBack" width="150" height="203.33">
+            <img class= 'SquarePic_face back-face' src="./IMAGES/PIC7.jpg" alt="pic7" width="150" height="203.33">
+    	</div>
+	</div>
+    <div class="room-SquarePic">
+        <div class="SquarePic" width="150" height="203.33" data-Pic = 'PIC8'>
+            <img class= 'SquarePic_face front-face' src="./IMAGES/backGround.jpg" alt="picBack" width="150" height="203.33">
+            <img class= 'SquarePic_face back-face' src="./IMAGES/PIC8.jpg" alt="pic8" width="150" height="203.33">
+    	</div>
+	</div>
+    <div class="room-SquarePic">
+        <div class="SquarePic" width="150" height="203.33" data-Pic = 'PIC8'>
+            <img class= 'SquarePic_face front-face' src="./IMAGES/backGround.jpg" alt="picBack" width="150" height="203.33">
+            <img class= 'SquarePic_face back-face' src="./IMAGES/PIC8.jpg" alt="pic8" width="150" height="203.33">
+    	</div>
+	</div>
+ 
+    
+    <div id="state">
+      <span id="time">0</span>
+    </div>
+  </section>
+</div>
+    
+<footer> 
+        Created by Juan Otavo
+      </footer>
+
+</body>
+</html>
