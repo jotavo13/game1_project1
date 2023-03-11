@@ -19,9 +19,7 @@ function flipCard() {
   if (this === firstChoice) return;
 
   this.classList.add('is-flipped');
-  //  .SquarePic.is-flipped {
-    // transform:rotateY(-180deg);
-  // }
+
 
   if (!hasFlippedCard) {
     // First card flipped
@@ -80,13 +78,6 @@ function resetBoard() {
   secondChoice = null;
 }
 
-// // Function to shuffle the squarePlay
-// (function shuffle() {
-//   squarePlay.forEach(Square => {
-//     let randomPos = Math.floor(Math.random() * 16);
-//     Square.style.order = randomPos;
-//   });
-// })();
 
 function shuffle() {
   roomSquare.forEach((Square) => {
