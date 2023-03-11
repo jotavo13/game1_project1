@@ -6,19 +6,22 @@ let roomSquare = document.querySelectorAll('.room-SquarePic')
 
 squarePlay.forEach(Square => Square.addEventListener('click', flipCard));
 
-// Initialize variables for tracking the flipped squarePlay
+//  var for tracking the flipped squarePlayPICS
 let hasFlippedCard = false;
 let lockBoard = false;
 let firstChoice;
 let secondChoice;
 
 
-// Function to flip a card
+// How to flip a card. 
 function flipCard() {
   if (lockBoard) return;
   if (this === firstChoice) return;
 
   this.classList.add('is-flipped');
+  //  .SquarePic.is-flipped {
+    // transform:rotateY(-180deg);
+  // }
 
   if (!hasFlippedCard) {
     // First card flipped
@@ -99,23 +102,12 @@ shuffle();
 
 
 
-//the checkWin is puting the already pair cards into an array and then cecking if that arricy 
- // function checkWin() {
-//   console.log(squarePlay);
-//   const allCardsDisabled = squarePlay.every((square) => {
-//     return (square.hasAttribute('is-flipped')) === true;
-//   });
-//   console.log(allCardsDisabled);
-//   if (allCardsDisabled === true) {
-//     alert('Congratulations, you have won the game!');
-//   }
-// }
-
 function checkWin() {
   let isWon = true;
   console.log(squarePlay)
   squarePlay.forEach(square => {
     if (!square.classList.contains('is-matched')) {
+      // line 53 and 54
       isWon = false;
     }
     console.log(squarePlay);
